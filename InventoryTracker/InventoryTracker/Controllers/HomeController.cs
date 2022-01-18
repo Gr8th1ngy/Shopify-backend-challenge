@@ -25,12 +25,14 @@ namespace InventoryTracker.Controllers
         // GET: Home/Index
         public IActionResult Index()
         {
+            // show undeleted items
             return View(_context.Items.ToList().Where(item => !item.Deleted));
         }
 
         // GET: Home/DeletedItems
         public IActionResult DeletedItems()
         {
+            //show deleted items
             return View(_context.Items.ToList().Where(item => item.Deleted));
         }
 
@@ -55,6 +57,7 @@ namespace InventoryTracker.Controllers
             {
                 _context.Items.Add(todo);
                 _context.SaveChanges();
+
                 return RedirectToAction("Index");
             }
 
@@ -76,6 +79,7 @@ namespace InventoryTracker.Controllers
             {
                 _context.Entry(item).State = EntityState.Modified;
                 _context.SaveChanges();
+
                 return RedirectToAction("Index");
             }
 
@@ -96,8 +100,10 @@ namespace InventoryTracker.Controllers
             if (ModelState.IsValid)
             {
                 item.Deleted = true;
+
                 _context.Entry(item).State = EntityState.Modified;
                 _context.SaveChanges();
+
                 return RedirectToAction("Index");
             }
 
@@ -118,8 +124,10 @@ namespace InventoryTracker.Controllers
             Item item = _context.Items.Find(id);
             item.Deleted = false;
             item.DeleteComment = string.Empty;
+
             _context.Entry(item).State = EntityState.Modified;
             _context.SaveChanges();
+
             return RedirectToAction("Index");
         }
 
