@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31005.135
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InventoryTracker", "InventoryTracker\InventoryTracker.csproj", "{B2A63051-AB8C-4A57-9A28-30468A3FEC38}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B2A63051-AB8C-4A57-9A28-30468A3FEC38}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B2A63051-AB8C-4A57-9A28-30468A3FEC38}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B2A63051-AB8C-4A57-9A28-30468A3FEC38}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B2A63051-AB8C-4A57-9A28-30468A3FEC38}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {B69EC530-D49D-44FC-8FAE-23A6BE38B6E0}
+	EndGlobalSection
+EndGlobal
